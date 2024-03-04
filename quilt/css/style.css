@@ -1,1 +1,83 @@
 
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .shape {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .square {
+    width: 100px;
+    height: 100px;
+    background-color: #2596be;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    background-color: #be4d25;
+    border-radius: 50%;
+  }
+  
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #55a630;
+  }
+  
+  .hexagon {
+    width: 100px;
+    height: 55px;
+    background-color: #d35400;
+    position: relative;
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+  }
+  
+  .hexagon:before {
+    bottom: 100%;
+    border-bottom: 27.5px solid #d35400;
+  }
+  
+  .hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 27.5px solid #d35400;
+  }
+  
+  .star {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #c0392b;
+    transform: rotate(35deg);
+  }
+  
+  .star:before {
+    content: '';
+    position: absolute;
+    top: -32px;
+    left: -52px;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #c0392b;
+    transform: rotate(-70deg);
+  }
+  
